@@ -1,0 +1,23 @@
+USE [SamirBhogayta]
+GO
+
+/****** Object:  Table [dbo].[UpdateInfo]    Script Date: 11/06/2023 10:29:57 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UpdateInfo](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[AppName] [varchar](100) NULL,
+	[PlatForm] [varchar](50) NULL,
+	[Version] [varchar](50) NULL,
+ CONSTRAINT [PK_AppVersion] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
